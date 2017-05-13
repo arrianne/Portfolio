@@ -1,6 +1,7 @@
 'use strict';
 
 $(function () {
+
   var $header = $('header');
   var $window = $(window);
   var $links = $('nav a');

@@ -23,13 +23,14 @@ a {
 
 p {
   text-align: center;
-  color: #ffcc99;
+  color: #ffce79;
   font-size: 2em;
 }
 .info {
   text-align: left;
   color: #b9b6b2;
   font-size: 1em;
+  padding-top: 2em;
 
 }
 
@@ -43,7 +44,7 @@ p {
 }
 
 h1 {
-  margin-top: 2em;
+  margin-top: 1em;
   font-family: 'Playfair Display', serif;
   color: #b9b6b2;
   font-size: 8em;
@@ -62,13 +63,15 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 3;
   height: 40px;
-  background-color: #ffcc99;
+  background-color: #ffce79;
   transition: background-color 0.2s ease;
   &.opaque {
-    background-color: rgba(20, 20, 20, 0.6);
+    background-color: #ffce79;
   }
+
+
   nav {
     ul {
       list-style: none;
@@ -135,9 +138,10 @@ header {
 section {
   text-align: center;
   padding-top: 100px;
-  padding-bottom: 400px;
+  padding-bottom: 100px;
   position: relative;
-  border-bottom: 2px solid $brand-color;
+  border-bottom: 4px solid #ffce79;
+  border-top: 4px solid #ffce79;
   &:last-of-type {
     border-bottom: 0;
   }
@@ -148,8 +152,11 @@ section {
 
 #title {
   height: 800px;
-
 }
+#contact {
+  height: 800px;
+}
+
 
 #menus {
   a {
@@ -168,10 +175,12 @@ section {
 #projects {
   .btn {
     background-position: center;
-    margin-top: 1em;
+    margin-top: 4em;
     display: left;
     float: left;
     margin-right: 1.5em;
+    background-color: #ffce79;
+    color: white;
   }
   .image {
     background-position: center;
@@ -299,7 +308,7 @@ footer {
     section {
       text-align: center;
       padding-top: 10px;
-      padding-bottom: 400px;
+      padding-bottom: 200px;
     }
     .image {
      margin: 4em;
@@ -312,4 +321,36 @@ footer {
       width: 250px;
       margin-left: 2em;
     }
+    #title {
+      height: 600px;
+    }
+    #projects {
+      height: 600px;
+    }
+    #contact {
+      height: 600px;
+    }
+    #about {
+      height: 600px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+  h1{
+
+  }
+
+  #title {
+    height: 1000px;
+  }
+  #projects {
+    height: 1000px;
+  }
+  #contact {
+    height: 1000px;
+  }
+  #about {
+    height: 1000px;
+  }
+
 }
