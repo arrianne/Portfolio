@@ -155,6 +155,12 @@ section {
 }
 #contact {
   height: 800px;
+  .col-sm-2  {
+    display:block;
+    text-align: center;
+    padding-top: 10em;
+    padding-left: 15em;
+  }
 }
 
 
@@ -173,6 +179,7 @@ section {
 }
 
 #projects {
+  border-bottom: none;
   .btn {
     background-position: center;
     margin-top: 4em;
@@ -181,6 +188,9 @@ section {
     margin-right: 1.5em;
     background-color: #ffce79;
     color: white;
+  }
+  .col-sm-3 {
+    padding-bottom: 3em
   }
   .image {
     background-position: center;
@@ -297,9 +307,11 @@ footer {
     h1{
         font-size:4em;
         margin-top: 2em;
+
     }
     h2 {
-        margin-top: 0;
+        margin-top: 2em;
+        margin-bottom: 0;
     }
     p {
       font-size:1em;
@@ -312,6 +324,8 @@ footer {
     }
     .image {
      margin: 4em;
+     float: none;
+     margin-top: 10em;
     }
     img {
       display: inline-block;
@@ -326,14 +340,34 @@ footer {
     }
     #projects {
       height: 600px;
+      .btn {
+        margin-top: 1em;
+        // margin-left: 2.5em;
+        // float: right;
+        // margin-right: 2em;
+        width: 100px;
+        margin-left: 8em;
+      }
+
     }
+
     #contact {
-      height: 600px;
+      .col-sm-2 {
+        display: block;
+        text-align: center;
+        padding-top: 0.5em;
+        padding-left: 0.5em;
+        }
+      height: 1000px;
+      margin-top: 100em;
     }
     #about {
       height: 600px;
     }
 }
+
+
+
 
 @media only screen and (max-width: 768px) {
   h1{
@@ -350,7 +384,7 @@ footer {
     height: 1000px;
   }
   #about {
-    height: 1000px;
+    height: 1400px;
   }
 
 }
