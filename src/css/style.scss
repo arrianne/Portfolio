@@ -25,6 +25,7 @@ p {
   text-align: center;
   color: #ffce79;
   font-size: 2em;
+
 }
 .info {
   text-align: left;
@@ -204,11 +205,14 @@ section {
     &.image-one {
       background-image: url(('../assets/images/image-one.jpg'));
     }
-    &.image-two {
-      background-image: url('../assets/images/image-two.jpg');
+    &.image-two2 {
+      background-image: url('../assets/images/image-two2.jpg');
     }
     &.image-three {
       background-image: url('../assets/images/image-three.jpg');
+    }
+    &.image-four {
+      background-image: url('../assets/images/image-four.jpg');
     }
     // &.me {
     //   background-image: url('../assets/images/me.jpg');
@@ -302,6 +306,11 @@ footer {
   }
 }
 
+img {
+  border-style: none;
+  margin: 2em;
+
+}
 
 @media screen and (max-width:480px){
     h1{
@@ -365,6 +374,7 @@ footer {
       height: 600px;
     }
 }
+
 
 
 
